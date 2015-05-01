@@ -114,8 +114,9 @@ public class Template extends JPanel{
         });
         bu.setBounds(380, 20, 20, 52);
         frame.add(bu);
-        
 
+
+        
 		JButton bd = new JButton();
 		bd.setIcon(new ImageIcon("res/down.png"));
         bd.addActionListener(new ActionListener() {
