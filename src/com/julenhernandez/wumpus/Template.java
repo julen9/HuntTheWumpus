@@ -25,7 +25,7 @@ import javax.swing.SwingUtilities;
  * 
  * This class initialize the template, add the main elements and controll all elements
  * 
- * @author Julen Hernandez
+ * @author Julen
  * @version 1.0
  */
 public class Template extends JPanel{
@@ -81,7 +81,7 @@ public class Template extends JPanel{
 		 * Listener of button to throw arrows
 		 */
 		JButton bl = new JButton();
-		bl.setIcon(new ImageIcon("res/left.png"));
+		bl.setIcon(new ImageIcon(getClass().getResource("res/left.png")));
         bl.addActionListener(new ActionListener() {
             public void actionPerformed(ActionEvent arg0) {
             	if(arrows<=0){
@@ -106,7 +106,7 @@ public class Template extends JPanel{
 		 * Listener of button to throw arrows
 		 */
 		JButton br = new JButton();
-		br.setIcon(new ImageIcon("res/right.png"));
+		br.setIcon(new ImageIcon(getClass().getResource("res/right.png")));
         br.addActionListener(new ActionListener() {
             public void actionPerformed(ActionEvent arg0) {
             	if(arrows<=0){
@@ -130,7 +130,7 @@ public class Template extends JPanel{
 		 * Listener of button to throw arrows
 		 */
 		JButton bu = new JButton();
-		bu.setIcon(new ImageIcon("res/up.png"));
+		bu.setIcon(new ImageIcon(getClass().getResource("res/up.png")));
         bu.addActionListener(new ActionListener() {
             public void actionPerformed(ActionEvent arg0) {
             	if(arrows<=0){
@@ -155,7 +155,7 @@ public class Template extends JPanel{
 		 * Listener of button to throw arrows
 		 */
 		JButton bd = new JButton();
-		bd.setIcon(new ImageIcon("res/down.png"));
+		bd.setIcon(new ImageIcon(getClass().getResource("res/down.png")));
         bd.addActionListener(new ActionListener() {
             public void actionPerformed(ActionEvent arg0) {
             	if(arrows<=0){
@@ -176,7 +176,7 @@ public class Template extends JPanel{
         
         JLabel imgWarn = new JLabel();
         imgWarn.setBounds(300, 140, 192, 155);
-        imgWarn.setIcon(new ImageIcon(("res/bubble.png")));
+        imgWarn.setIcon(new ImageIcon(getClass().getResource("res/bubble.png")));
         frame.add(imgWarn);
         
         /**
