@@ -1,17 +1,30 @@
 package com.julenhernandez.wumpus;
 
+/**
+ * Class of individual box, each box can contains warnings and main characters
+ * 
+ * @author Julen
+ *
+ */
 public class Box {
 
-	//possilbe objects at each box
+	/**
+	 * possilbe objects at each box
+	 */
 	private boolean wumpus;
 	private boolean pit;
 	private boolean bat;
 	
-	//possible warnings at each box
+	/**
+	 * possible warnings at each box
+	 */
 	private boolean smell;
 	private boolean breeze;
 	private boolean noise;
 	
+	/**
+	 * Builder of the class
+	 */
 	Box(){
 		this.wumpus = false;
 		this.pit = false;
